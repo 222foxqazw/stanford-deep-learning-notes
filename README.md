@@ -7,8 +7,7 @@
 
 ## 测验
 
----
-中文版本
+### 中文版本
 - [**C1W1 深度学习引言【无答案】**](./trials/C1W1_noAnswers.md)
 - [**C1W2 神经网络的编程基础【无答案】**](./trials/C1W2_noAnswers.md)
 - [**C1W3 浅层神经网络【无答案】**](./trials/C1W3_noAnswers.md)
@@ -25,8 +24,8 @@
 - [**C5W1 循环神经网络【无答案】**](./trials/C5W1_noAnswers.md)
 - [**C5W2 自然语言处理与词嵌入【无答案】**](./trials/C5W2_noAnswers.md)
 - [**C5W3 序列模型与注意力机制【无答案】**](./trials/C5W3_noAnswers.md)
----
-中文版本答案
+
+### 中文版本答案
 - [**C1W1 深度学习引言【有答案】**](./trials/C1W1_withAnswers.md)
 - [**C1W2 神经网络的编程基础【有答案】**](./trials/C1W2_withAnswers.md)
 - [**C1W3 浅层神经网络【有答案】**](./trials/C1W3_withAnswers.md)
@@ -43,7 +42,7 @@
 - [**C5W1 循环神经网络【有答案】**](./trials/C5W1_withAnswers.md)
 - [**C5W2 自然语言处理与词嵌入【有答案】**](./trials/C5W2_withAnswers.md)
 - [**C5W3 序列模型与注意力机制【有答案】**](./trials/C5W3_withAnswers.md)
----
+
 
 ## 代码
 代码文件需解压后用ipython notebook打开
