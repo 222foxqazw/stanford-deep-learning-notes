@@ -1,52 +1,11 @@
-<h1 align="center">《深度学习》学习笔记(xmind)、代码、代码视频讲解</h1>
-
+<h1 align="center">《深度学习》代码、代码视频讲解</h1>
 
 <p align="center"><a href="https://github.com/greebear"><img src="https://img.shields.io/badge/%E4%BD%9C%E8%80%85-greebear-blue.svg"></a></p>
 
 ## 入门指南
 - [**深度之眼学员入口**](./guide/guide.md)
 
-
-## 笔记
-
-xmind整理的笔记，持续更新中...
-[![](assets/xmindDemo.jpg)](./xmind/)
-
-- [**C1W2 神经网络的编程基础A.xmind**](./xmind/C1W2/C1W2%20神经网络的编程基础A.xmind)
-- [**C1W2 神经网络的编程基础B.xmind**](./xmind/C1W2/C1W2%20神经网络的编程基础B.xmind)
-- [**C1W3 浅层神经网络A.xmind**](./xmind/C1W3/C1W3%20浅层神经网络A.xmind)
-- [**C1W3 浅层神经网络B.xmind**](./xmind/C1W3/C1W3%20浅层神经网络B.xmind)
-- [**C1W4 深层神经网络A.xmind**](./xmind/C1W4/C1W4%20深度神经网络A.xmind)
-- [**C1W4 深层神经网络B.xmind**](./xmind/C1W4/C1W4%20深度神经网络B.xmind)
-- [**C2W1 深度学习的实践A.xmind**](./xmind/C2W1/C2W1深度学习的实践A.xmind)
-- [**C2W1 深度学习的实践B.xmind**](./xmind/C2W1/C2W1深度学习的实践B.xmind)
-- [**C2W2 优化算法.xmind**](./xmind/C2W2/C2W2%20优化算法.xmind)
-- [**C2W3 超参数调试、正则化以及优化.xmind**](./xmind/C2W3/C2W3%20超参数调试、正则化以及优化.xmind)
-- [**C3W1 机器学习（ML）策略（1）.xmind**](./xmind/C3W1/C3W1%20机器学习（ML）策略（1）.xmind)
-- [**C3W2 机器学习（ML）策略（2）.xmind**](./xmind/C3W2/C3W2%20机器学习（ML）策略（2）.xmind)
-- [**C4W1 卷积神经网络.xmind**](./xmind/C4W1/C4W1%20卷积神经网络.xmind)
-- [**上海财经大学金成博士分享：利用AI做金融市场预测靠谱吗**](./xmind/AIAndFinance/)
-
 ## 测验
-
----
-英文版本
-- [**C1W1 深度学习引言【无答案】**](./trials/C1W1_noAnswers_EnVer.md)
-- [**C1W2 神经网络的编程基础【无答案】**](./trials/C1W2_noAnswers_EnVer.md)
-- [**C1W3 浅层神经网络【无答案】**](./trials/C1W3_noAnswers_EnVer.md)
-- [**C1W4 深层神经网络【无答案】**](./trials/C1W4_noAnswers_EnVer.md)
-- [**C2W1 深度学习的实践【无答案】**](./trials/C2W1_noAnswers_EnVer.md)
-- [**C2W2 优化算法【无答案】**](./trials/C2W2_noAnswers_EnVer.md)
-- [**C2W3 超参数调整、批量标准化、编程框架【无答案】**](./trials/C2W3_noAnswers_EnVer.md)
-- [**C3W1 和平之城中的鸟类识别(案例研究)【无答案】**](./trials/C3W1_noAnswers_EnVer.md)
-- [**C3W2 自动驾驶（案例研究）【无答案】**](./trials/C3W2_noAnswers_EnVer.md)
-- [**C4W1 卷积神经网络的基本知识【无答案】**](./trials/C4W1_noAnswers_EnVer.md)
-- [**C4W2 深度卷积网络模型【无答案】**](./trials/C4W2_noAnswers_EnVer.md)
-- [**C4W3 目标检测算法【无答案】**](./trials/C4W3_noAnswers_EnVer.md)
-- [**C4W4 人脸识别与神经风格迁移【无答案】**](./trials/C4W4_noAnswers_EnVer.md)
-- [**C5W1 循环神经网络【无答案】**](./trials/C5W1_noAnswers_EnVer.md)
-- [**C5W2 自然语言处理与词嵌入【无答案】**](./trials/C5W2_noAnswers_EnVer.md)
-- [**C5W3 序列模型与注意力机制【无答案】**](./trials/C5W3_noAnswers_EnVer.md)
 
 ---
 中文版本
