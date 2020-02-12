@@ -72,19 +72,5 @@
 - [**C5W2 编程作业11：词向量运算**](./assignment/assignment_withAnswers/C5/Word%20Vector%20Representation/README.md)
 - [**C5W2 编程作业12：Emoji表情生成器**](./assignment/assignment_withAnswers/C5/Emojify/README.md)
 
-## 代码讲解视频(bilibili)
-**bilibili主页** : https://space.bilibili.com/10410626
-[![](./assets/bilibiliDemo.jpg)](https://space.bilibili.com/10410626)
-- [**C1W2 编程作业1：构建一个逻辑回归分类器来识别猫**](https://www.bilibili.com/video/av50307869)
-- [**C1W3 编程作业2：通过一个隐藏层的神经网络来做平面数据的分类**](https://www.bilibili.com/video/av51486088)
-- [**C1W4 编程作业3：构建深度神经网络做图像处理**](https://www.bilibili.com/video/av52785212)
-- [**C2W3 编程作业4：TensorFlow实战**](https://www.bilibili.com/video/av54668655)
-- [**C4W1 编程作业5：一步步构建卷积神经网络**](https://www.bilibili.com/video/av56250374)
-- [**C4W2 编程作业6：利用Keras框架构建残差网络**](https://www.bilibili.com/video/av57062905)
-- [**C4W3 编程作业7：自动驾驶—目标检测（yolo模型）**](https://www.bilibili.com/video/av58025877)
-- [**C4W4 编程作业8：特殊应用(人脸识别和神经风格迁移)**](https://www.bilibili.com/video/av58152812)
-- [**C5W1 编程作业9：字符级语言模型 - 恐龙岛**](https://www.bilibili.com/video/av59087993)
-
 ## 课程地址
-
 [deeplearning.ai - 主页 - 网易云课堂](https://study.163.com/provider/2001053000/index.htm)
