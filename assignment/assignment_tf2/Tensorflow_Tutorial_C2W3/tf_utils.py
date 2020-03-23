@@ -111,10 +111,10 @@ def forward_propagation_for_predict(X, parameters):
     W3 = parameters['W3']
     b3 = parameters['b3']
 
-    Z1 = W1 @ X + b1
-    A1 = tf.nn.relu(Z1)
-    Z2 = W2 @ A1 + b2
-    A2 = tf.nn.relu(Z2)
-    Z3 = W3 @ A2 + b3
+    Z1 = tf.add(tf.matmul(W1, X), b1)  # Z1 = np.dot(W1, X) + b1
+    A1 = tf.nn.relu(Z1)  # A1 = relu(Z1)
+    Z2 = tf.add(tf.matmul(W2, A1), b2)  # Z2 = np.dot(W2, a1) + b2
+    A2 = tf.nn.relu(Z2)  # A2 = relu(Z2)
+    Z3 = tf.add(tf.matmul(W3, A2), b3)  # Z3 = np.dot(W3,Z2) + b3
 
     return Z3
