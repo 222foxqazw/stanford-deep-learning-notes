@@ -86,7 +86,6 @@ def predict(X, parameters):
 
     z3 = forward_propagation_for_predict(X, params)
     prediction = tf.argmax(z3)
-
     return prediction
 
 
@@ -103,7 +102,7 @@ def forward_propagation_for_predict(X, parameters):
     Z3 -- the output of the last LINEAR unit
     """
 
-    # Retrieve the parameters from the dictionary "parameters" 
+    # Retrieve the parameters from the dictionary "parameters"
     W1 = parameters['W1']
     b1 = parameters['b1']
     W2 = parameters['W2']

@@ -70,8 +70,8 @@ def model(X_train, Y_train, X_test, Y_test, learning_rate=0.0001,
         m = X.shape[1]  # (m : number of examples in the train set)
 
         seed = seed + 1
-        accuracy, epoch_cost = 0., 0.  # Defines a cost related to an epoch
-        num_minibatches = int(m / minibatch_size)  # number of minibatches of size minibatch_size in the train set
+        epoch_cost_array = []
+        accuracy = 0.
 
         minibatches = random_mini_batches(X, Y, minibatch_size, seed)
         W1 = train_parameters['W1']
@@ -94,12 +94,11 @@ def model(X_train, Y_train, X_test, Y_test, learning_rate=0.0001,
             # Backpropagation: Define the tensorflow optimizer. Use an AdamOptimizer.
             grads = tape.gradient(minibatch_cost, [W1, b1, W2, b2, W3, b3])
             optimizer.apply_gradients(zip(grads, [W1, b1, W2, b2, W3, b3]))
-
-            epoch_cost += minibatch_cost / num_minibatches
+            epoch_cost_array.append(minibatch_cost)
             # Calculate the correct predictions
             correct_prediction = tf.equal(tf.argmax(Z3), tf.argmax(minibatch_Y))
             #  Calculate accuracy on the test set
-            accuracy += tf.reduce_mean(tf.cast(correct_prediction, "float")) / num_minibatches
+            accuracy += tf.reduce_sum(tf.cast(correct_prediction, "float"))
 
         train_parameters = {"W1": W1,
                             "b1": b1,
@@ -107,6 +106,8 @@ def model(X_train, Y_train, X_test, Y_test, learning_rate=0.0001,
                             "b2": b2,
                             "W3": W3,
                             "b3": b3}
+        epoch_cost = tf.reduce_mean(epoch_cost_array)
+        accuracy /= m
         # Print the cost every epoch
         if print_cost is True and epoch % 100 == 0:
             print("Cost after epoch %i: %f" % (epoch, epoch_cost))
@@ -118,9 +119,8 @@ def model(X_train, Y_train, X_test, Y_test, learning_rate=0.0001,
     parameters = initialize_parameters()
     optimizer = tf.optimizers.Adam(learning_rate=learning_rate)
     costs = []
-
+    seed = 3
     for epoch in range(num_epochs):
-        seed = 3
         costs, train_accuracy, opt_parameters = train(X_train, Y_train, parameters, seed)
 
     # plot the cost
@@ -134,7 +134,7 @@ def model(X_train, Y_train, X_test, Y_test, learning_rate=0.0001,
     Y_test = tf.convert_to_tensor(Y_test, dtype=tf.float32)
     out = predict(X_test, opt_parameters)
     # Calculate the correct predictions
-    correct_prediction = tf.equal(tf.argmax(out), tf.argmax(Y_test))
+    correct_prediction = tf.equal(out, tf.argmax(Y_test))
     # Calculate accuracy on the test set
     test_accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
 
@@ -153,4 +153,4 @@ if __name__ == '__main__':
     X_test = X_test_flatten / 255.
     Y_train = convert_to_one_hot(Y_train_orig, 6)
     Y_test = convert_to_one_hot(Y_test_orig, 6)
-    parameters = model(X_train, Y_train, X_test, Y_test, num_epochs=20)
+    parameters = model(X_train, Y_train, X_test, Y_test, num_epochs=1500)

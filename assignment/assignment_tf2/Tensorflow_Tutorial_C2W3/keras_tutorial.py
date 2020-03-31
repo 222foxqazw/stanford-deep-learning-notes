@@ -4,7 +4,7 @@
 @author: HuRuiFeng
 @file: keras_tutorial.py
 @time: 2020/3/23 18:25
-@desc:
+@desc: keras实现
 """
 
 import tensorflow as tf
